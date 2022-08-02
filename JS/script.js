@@ -1,0 +1,1 @@
+let mohamed = document.querySelectorAll(".bar");
