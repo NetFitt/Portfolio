@@ -59,12 +59,20 @@ header{
     list-style: none;
     display: flex;
     justify-content: space-between;
-    
 }
+/* .menu{
+    margin: 0 auto;
+}
+.menu_links{
+    display: flex;
+    flex-direction: column;
+
+} */
 .bars{
     font-size: 2.25rem;
     display: none;
 }
+
 .link-cont{
     
     width: 50%;
@@ -163,17 +171,17 @@ header{
 /* SKILLS */
 
 .skills{
-    background-image:url('../images/skills2.png');
+    background-image:
+    url('../images/skills2.png');
     background-position: center;
     background-size: cover;
-    width: 100%;
+    /* width: 100%; */
     font-family: 'Algeria', sans-serif;
     height: 100vh;
     margin-top: 1.875rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-
 }
 
 .container_2{
@@ -259,8 +267,7 @@ header{
 
 .container_3{
     display: flex;
-    align-content:
-    center;
+    align-content:center;
     flex-wrap: wrap;
     justify-content: space-between;
 }
@@ -350,8 +357,9 @@ footer{
     background-color: #141414;
 }
 
+
 /* media */
-@media screen and (max-width: 676px) {
+@media screen and (max-width: 768px) {
     header{
         height: 500px;
         margin-bottom: 70px;
@@ -363,11 +371,31 @@ footer{
         display: block;
     }
     .link-cont{
-        display: none;
+        position:
+        absolute;
+        width: 80%;
+        text-align: center;
+        background-color: #F4F3F0;
+        left: 50%;
+        top: 18%;
+        transform: translateX(-50%);
+        border-radius: 5px;
+        transition: ease-in 0.5s;
+        visibility: hidden;
+        opacity: 0;
+    }
+    .links{
+        flex-direction: column;
+        justify-content: space-around;
+        height: 200px;
     }
     .title{
         margin-top: 8rem;
         /* margin: auto; */
+    }
+    .open{
+        visibility: visible;
+        opacity: 1;
     }
     .main_t{
         font-size: 2rem;
@@ -435,7 +463,8 @@ footer{
         height: 800px;
         justify-content: space-between;
     }
-
+    /* menu */
+    
 
 }
 
@@ -464,7 +493,5 @@ footer{
     .contact{
         height: 640px;
     }
-    
 
-    
 }
