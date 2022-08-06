@@ -284,11 +284,18 @@ header{
     flex-direction: column;
 }
 .carou{
+    display: flex;
+    justify-content: space-between;
     position: relative;
     width: 100%;
+    align-items: center;
     height: 350px;
     background-color: #FFAD15;
     border-radius:10px ;
+}
+.flesh{
+    font-size: 2.75rem;
+    
 }
 .pro_t{
     margin: 0 auto;
